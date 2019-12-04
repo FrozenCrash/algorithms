@@ -1,4 +1,4 @@
-Repo with solutions.
+Repo with tasks solutions.
 
 All tasks taken from: 
   - Euler project 
