@@ -24,7 +24,12 @@ def most_money(students)
   students.map do |x|
     arr << "#{x.name} #{x.fives * 5 + x.tens * 10 + x.twenties * 20}"
   end
-  arr.sort.last.split(' ')[0]
+  puts arr
+  if arr.count == 1
+    arr.sort.last.split(' ')[0]
+  else
+    "all"
+  end
 end
 
 most_money([cam, phil, geoff])
