@@ -4,5 +4,5 @@
 def borrow(s)
   res = []
   a = s.downcase.each_byte { |x| res << x.ord }
-  res.map! { |x| x.chr if x >= 96 || x >= 122 }.join
+  res.map! { |x| x.chr if x >= 96 && x <= 122 }.join
 end
