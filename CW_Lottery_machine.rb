@@ -10,9 +10,5 @@ def lottery(str)
       end
     end
   end
-  if result.empty?
-    "One more run!"  
-   else
-    result.uniq.join
-  end
+  result.empty? ? "One more run!" : result.uniq.join
 end
