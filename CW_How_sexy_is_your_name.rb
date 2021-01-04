@@ -7,14 +7,5 @@ $SCORES = {'A'=> 100, 'B'=> 14, 'C'=> 9, 'D'=> 28, 'E'=> 145, 'F'=> 12, 'G'=> 3,
 
 def sexy_name(name)
   score = name.upcase.delete(' ').split('').map { |x| $SCORES[x] }.inject(:+).to_i
-  case 
-  when score <= 60
-    'NOT TOO SEXY'
-  when score <= 300
-    'PRETTY SEXY'
-  when score <= 599
-    'VERY SEXY'
-  else
-    'THE ULTIMATE SEXIEST'
-  end
+  score < 61 ? 'NOT TOO SEXY' : score < 301 ? 'PRETTY SEXY' : score < 600 ? 'VERY SEXY' : 'THE ULTIMATE SEXIEST' 
 end
