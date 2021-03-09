@@ -1,5 +1,9 @@
 # First method 
 
+"string".reverse # :)
+
+# Second method
+
 def reverse_string(string)
   splited_string = string.split('') # Split string
   counter = string.length - 1       # Count elements in array
@@ -13,7 +17,7 @@ end
 
 puts reverse_string('Hello World !')
 
-# Second method
+# Third method
 
 def rev_str(string)
   b = Array.new                         # Create new array for result
@@ -22,7 +26,3 @@ def rev_str(string)
 end
 
 puts rev_str("Hello Earth !")
-
-# Third method
-
-"string".reverse # :)
